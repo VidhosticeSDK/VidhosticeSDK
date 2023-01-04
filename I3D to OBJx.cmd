@@ -1,8 +1,8 @@
 @echo off
-set VidhosticeSDK="%~dp0\Vidhostice SDK"
+set "VidhosticeSDK=%~dp0\Vidhostice SDK"
 color a
 cls
-type %VidhosticeSDK%\info.txt
+type "%VidhosticeSDK%\info.txt"
 
 if not exist "%~1" goto error
 
@@ -10,16 +10,18 @@ if not exist "%~1" goto error
 
 if %~x1==.shapes (
     echo Shape file "%~1"
-    %VidhosticeSDK%\I3DShapesTool.exe -v "%~1"
+    "%VidhosticeSDK%\I3DShapesTool.exe" -v "%~1"
     echo.
     if exist "%~n1" (
-        %VidhosticeSDK%\i3d_to_mtl.py "%~n1"
+        python "%VidhosticeSDK%\i3d_to_mtl.py" "%~n1"
     )
-) else (
+)
+
+if %~x1==.i3d (
     echo Shape file "%~1.shapes"
-    %VidhosticeSDK%\I3DShapesTool.exe -v "%~1.shapes"
+    "%VidhosticeSDK%\I3DShapesTool.exe" -v "%~1.shapes"
     echo.
-    %VidhosticeSDK%\i3d_to_mtl.py "%~1"
+    python "%VidhosticeSDK%\i3d_to_mtl.py" "%~1"
 )
 echo.
 

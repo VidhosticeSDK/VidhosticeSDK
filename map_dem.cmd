@@ -1,8 +1,8 @@
 @echo off
-set VidhosticeSDK="%~dp0\Vidhostice SDK"
+set "VidhosticeSDK=%~dp0\Vidhostice SDK"
 color a
 cls
-type %VidhosticeSDK%\info.txt
+type "%VidhosticeSDK%\info.txt"
 
 if not exist "%~1" goto error
 
@@ -19,10 +19,10 @@ if %~x1==.png (
     echo.
 
     REM ImageMagick 7.1.0-9 Q16-HDRI x64 2021-10-03 https://imagemagick.org
-    %VidhosticeSDK%\convert.exe "%~1" -depth 16 gray:temporary_data_r16
+    "%VidhosticeSDK%\convert.exe" "%~1" -depth 16 gray:temporary_data_r16
 
     REM https://github.com/ryobg/obj2hmap Very simple convertor of Wavefront's obj files to displacement map
-    %VidhosticeSDK%\hmap2obj.exe temporary_data_r16 "%~n1.obj" 2049 2049 -2048 0 -2048 2048 255 2048 --absolute
+    "%VidhosticeSDK%\hmap2obj.exe" temporary_data_r16 "%~n1.obj" 2049 2049 -2048 0 -2048 2048 255 2048 --absolute
 
     erase temporary_data_r16
 )
@@ -38,10 +38,10 @@ if %~x1==.obj (
     echo.
 
     REM https://github.com/ryobg/obj2hmap Very simple convertor of Wavefront's obj files to displacement map
-    %VidhosticeSDK%\obj2hmap.exe "%~1" temporary_data_r16 2049 0xFFFF 2049 y u16 0 255 
+    "%VidhosticeSDK%\obj2hmap.exe" "%~1" temporary_data_r16 2049 0xFFFF 2049 y u16 0 255 
 
     REM ImageMagick 7.1.0-9 Q16-HDRI x64 2021-10-03 https://imagemagick.org
-    %VidhosticeSDK%\convert.exe -size 2049x2049 -depth 16 gray:temporary_data_r16 "%~n1.png"
+    "%VidhosticeSDK%\convert.exe" -size 2049x2049 -depth 16 gray:temporary_data_r16 "%~n1.png"
 
     erase temporary_data_r16
 )

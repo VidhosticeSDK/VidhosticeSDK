@@ -1,8 +1,8 @@
 @echo off
-set VidhosticeSDK="%~dp0\Vidhostice SDK"
+set "VidhosticeSDK=%~dp0\Vidhostice SDK"
 color a
 cls
-type %VidhosticeSDK%\info.txt
+type "%VidhosticeSDK%\info.txt"
 
 if not exist "%~1" goto error
 
@@ -21,7 +21,7 @@ if defined TRUE (
     echo Convert "%~1" to "%~n1.png"
     echo.
 
-    %VidhosticeSDK%\grleConverter.exe "%~1" -out "%~n1.png"
+    "%VidhosticeSDK%\grleConverter.exe" "%~1" -out "%~n1.png"
 ) else (
     echo soubor neni typu gdm ani grle
 )

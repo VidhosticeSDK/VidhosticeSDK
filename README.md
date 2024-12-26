@@ -1,5 +1,8 @@
-### Hi there 👋
+The map "In Bohemia" is a template designed primarily for map and mod creators.
 
+<!--
+### Hi there 👋
+-->
 <!--
 **VidhosticeSDK/VidhosticeSDK** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

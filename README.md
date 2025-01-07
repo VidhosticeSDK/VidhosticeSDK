@@ -1,22 +1,22 @@
 The map "In Bohemia" is a template designed primarily for map and mod creators.
 
-In Bohemia 4x4km 4k
-area: 4096x4096 m
-resolution *_weight.png: 4096x4096 px
+In Bohemia 4x4km 4k<br/>
+area: 4096x4096 m<br/>
+resolution *_weight.png: 4096x4096 px<br/>
 
-ground textures - AS+EU+US (reduced to 65): ✓
-number of crops on the ground - densityMapHeightTypes (128): ✓
-stubble rolling: ✓ (barley, rapeseed, grass, corn, oats, sorghum, soybeans, sunflowers, wheat)
-multiple ground angles (32): ✓
-number of farmlands (255): ✓
-multifruit: ✓
-possibility to draw all surfaces: ✓
-possibility to draw fields (plowing...): ✓
-add. decoFoliage + decoBush from all maps: ✓
-disabled missions for Carrot, Beetroot, Parsnip, Cotton, Sugarcane: ✓
-LUA: Utils.getFilename: # at the beginning redirects the path to the map folder: ✓
-LUA: FruitTypeManager.loadDefaultTypes loads crops only from the map: ✓
-possibility to place custom xml for "preplaced placeable" directly into the map: ✓
+ground textures - AS+EU+US (reduced to 65): ✓<br/>
+number of crops on the ground - densityMapHeightTypes (128): ✓<br/>
+stubble rolling: ✓ (barley, rapeseed, grass, corn, oats, sorghum, soybeans, sunflowers, wheat)<br/>
+multiple ground angles (32): ✓<br/>
+number of farmlands (255): ✓<br/>
+multifruit: ✓<br/>
+possibility to draw all surfaces: ✓<br/>
+possibility to draw fields (plowing...): ✓<br/>
+add. decoFoliage + decoBush from all maps: ✓<br/>
+disabled missions for Carrot, Beetroot, Parsnip, Cotton, Sugarcane: ✓<br/>
+LUA: Utils.getFilename: # at the beginning redirects the path to the map folder: ✓<br/>
+LUA: FruitTypeManager.loadDefaultTypes loads crops only from the map: ✓<br/>
+possibility to place custom xml for "preplaced placeable" directly into the map: ✓<br/>
 
 Changelog 1.0.0.1:
 

@@ -1,4 +1,4 @@
-The map "In Bohemia" is a template designed primarily for map and mod creators.
+**The map "In Bohemia" is a template designed primarily for map and mod creators.**
 
 In Bohemia 4x4km 4k<br/>
 area: 4096x4096 m<br/>

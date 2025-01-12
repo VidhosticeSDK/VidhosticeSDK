@@ -23,20 +23,42 @@ Changelog 1.0.0.1:
 - added trainSystem (isPreplaced="true")
 - fixes according to testRunner (trees, decoBushEU, ...)
 
-<!--
-### Hi there 👋
--->
-<!--
-**VidhosticeSDK/VidhosticeSDK** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Changelog 1.0.0.2:
 
-Here are some ideas to get you started:
+- bug fix: "DPU: Frame buffer scaling error(larger than the primary)" Typically happens when doing field work such as plowing or cutting grass.<br/>
+  map.xml - ```<weed filename="$data/maps/mapAS/config/weed.xml" /> -> <weed filename="map/config/weed.xml" />```
+- added pedestrianSystem.xml and trafficSystem.xml
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+**Mapa "V Čechách" je šablona určená především pro tvůrce map a módů.**
+
+In Bohemia 4x4km 4k<br/>
+rozloha: 4096x4096 m<br/>
+rozlišení *_weight.png: 4096x4096 px<br/>
+ 
+zemní textury - AS+EU+US (zredukováno na 65): ✓<br/>
+počet plodin na zemi - densityMapHeightTypes (128): ✓<br/>
+rozjíždění strniště: ✓ (ječmen, řepka, tráva, kukuřice, oves, čirok, sója, slunečnice, pšenice)<br/>
+více zemních úhlů (32): ✓<br/>
+počet farmlandů (255): ✓<br/>
+multifruit: ✓<br/>
+možnost kreslit všechny povrchy: ✓<br/>
+možnost kreslit pole (orbu...): ✓<br/>
+dopl. decoFoliage + decoBush ze všech map: ✓<br/>
+vypnuty mise pro Mrkev, Červená řepa, Pastyňák, Bavlna, Cukrová třtina: ✓<br/>
+LUA: Utils.getFilename: znak # na začátku přesměruje cestu do složky mapy: ✓<br/>
+LUA: FruitTypeManager.loadDefaultTypes načítá plodiny pouze z mapy: ✓<br/>
+možnost umístit vlastní xml pro "preplaced placeable" přímo do mapy: ✓<br/>
+
+Seznam změn 1.0.0.1:
+
+- přidán trainSystem (isPreplaced="true")
+- opravy dle testRunner (trees, decoBushEU, ...)
+
+Seznam změn 1.0.0.2:
+
+- oprava chyby: "DPU: Frame buffer scaling error(larger than the primary)" Obvykle se vyskytuje při práci na poli, jako je orba nebo sekání trávy.<br/>
+  map.xml - ```<weed filename="$data/maps/mapAS/config/weed.xml" /> -> <weed filename="map/config/weed.xml" />```
+- přidán pedestrianSystem.xml a trafficSystem.xml
+

@@ -29,6 +29,12 @@ Changelog 1.0.0.2:
   map.xml - ```<weed filename="$data/maps/mapAS/config/weed.xml" /> -> <weed filename="map/config/weed.xml" />```
 - added pedestrianSystem.xml and trafficSystem.xml
 
+Changelog 1.0.0.3:
+
+- added missing map/config/fields.xml
+- added licensePlatesCZ + aiLicensePlatesCZ (by Lorex)
+- added rudolfHormann: cowBarnBigVector (isPreplaced="true")
+
 ---
 
 **Mapa "V Čechách" je šablona určená především pro tvůrce map a módů.**
@@ -62,3 +68,8 @@ Seznam změn 1.0.0.2:
   map.xml - ```<weed filename="$data/maps/mapAS/config/weed.xml" /> -> <weed filename="map/config/weed.xml" />```
 - přidán pedestrianSystem.xml a trafficSystem.xml
 
+Seznam změn 1.0.0.3:
+
+- doplněn chybějící map/config/fields.xml
+- přidány licensePlatesCZ + aiLicensePlatesCZ (by Lorex)
+- přidán rudolfHormann: cowBarnBigVector (isPreplaced="true")
